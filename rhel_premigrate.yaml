@@ -1,0 +1,11 @@
+---
+- hosts: 10.1.1.1 
+
+
+  vars:
+	rhsm_repositories:
+	  - "rhel-7-server-rpms" 
+
+
+  roles:
+	- role: ims.rhel_pre_migration
